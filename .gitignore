@@ -1,0 +1,6 @@
+.env
+
+# 🔒 Ignore secret key folder
+/backend/secrets/
+
+secrets/firebase-key.json
