@@ -85,7 +85,10 @@ const sendFCMNotification = async ({ token, title, body, image, data = {} }) => 
         return { success: true, token, response };
     } catch (error) {
         // ❌ Catch any send errors
-        console.error("❌ Failed to send to token:", token, error.message);
+        console.error("❌ Failed to send to token:", token, error.message, error);
+        console.error("❌ Failed to send to token:", token);
+        console.error("Error message:", error.message);
+        console.error("Full error:", error);
 
         return {
             success: false,
